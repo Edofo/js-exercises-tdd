@@ -1,6 +1,5 @@
 function addNumbers(numbers) {
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-    return numbers.reduce(reducer)
+    return numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
 }
 module.exports = addNumbers;
