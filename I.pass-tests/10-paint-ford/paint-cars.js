@@ -1,11 +1,15 @@
 function paintShop(cars, color) {
+    let car = JSON.parse(JSON.stringify(cars));
 
-    cars.forEach(
-        (v) => cars[v.colour] == "Red"
-
+    car.forEach(
+        (v) => { 
+            if (v.make == "Ford") {
+                return (v.colour = color);  
+            }
+        }
     )
 
-    return cars;
+    return car;
 }
 
-module.exports = paintShop;
+module.exports = paintShop
